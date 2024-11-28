@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_mysqldb import MySQL
-import MySQLdb.cursors
-import re
+
+import pymysql
+pymysql.install_as_MySQLdb()
 
 app = Flask(__name__)
 
