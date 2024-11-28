@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - FreshBasket</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Your Dashboard</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('shop') }}">Shop</a>
+        <a href="{{ url_for('cart') }}">Cart</a>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('register') }}">Register</a>
+    </div>
+
+    <div class="container">
+        <h2>Welcome back, User!</h2>
+        <p>Your order history and account details are here.</p>
+        <ul>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Account Settings</a></li>
+            <li><a href="#">Log out</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 FreshBasket. All rights reserved.</p>
+    </footer>
+</body>
+</html>

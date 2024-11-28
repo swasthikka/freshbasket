@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - FreshBasket</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/manage-items">Manage Items</a></li>
+                <li><a href="/orders">Orders</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>Welcome to the FreshBasket Admin Dashboard. Here, you can manage products, view orders, and perform other administrative tasks.</p>
+        </section>
+
+        <section>
+            <h2>Manage Items</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Data (to be dynamically populated) -->
+                    <tr>
+                        <td>1</td>
+                        <td>Apple</td>
+                        <td>$2.00</td>
+                        <td>100</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Banana</td>
+                        <td>$1.50</td>
+                        <td>150</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows dynamically -->
+                </tbody>
+            </table>
+            <button>Add New Item</button>
+        </section>
+
+        <section>
+            <h2>Recent Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sample Data (to be dynamically populated) -->
+                    <tr>
+                        <td>1001</td>
+                        <td>John Doe</td>
+                        <td>$45.00</td>
+                        <td>Pending</td>
+                        <td>
+                            <button>View</button>
+                            <button>Update Status</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FreshBasket. All rights reserved.</p>
+    </footer>
+</body>
+</html>
